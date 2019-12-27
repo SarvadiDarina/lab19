@@ -5,9 +5,7 @@
 # Від’ємні елементи зберегти у окремому файлі дійсних чисел «V.dat».
 with open('2.txt') as file:
     numbers = []
-    file_list = []
-    for el in file:
-        file_list = file.read().splitlines()
+    file_list = file.read().splitlines()
     num_list = [int(j) for i in file_list for j in i.split()]
     count_el = len(num_list)
     print('Розмір матриці становить {0}x{1}'.format((count_el//2), (count_el//2)))
