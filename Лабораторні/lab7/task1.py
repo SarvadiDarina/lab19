@@ -1,10 +1,11 @@
 #Дана цілочислова прямокутна матриця.Визначити добуток додатних елементів матриці
 # вище головної діагоналі.
 
-n = int(input('Rows: '))
+n = int(input('Кількість рядків: '))
+m = int(input('Кількість стовпців: '))
 matrix = [
-    [int(input('Element: ')) for i in range(n)] for j in range(n)
-]
+    [int(input('Елементи: ')) for i in range(m)] for j in range(n)
+    ]
 for el in matrix:
     print(el)
 product = 1
